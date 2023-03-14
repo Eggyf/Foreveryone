@@ -1,11 +1,11 @@
 import React from 'react'
-import LoginScreen from './components/login/LoginScreen'
-import AppRouter from './routers/AppRouter'
+
+import AuthRouter from './routers/AuthRouter'
 
 const Foreveryone = () => {
   return (
     <>
-      <AppRouter/>
+      <AuthRouter/>
     </>
   )
 }

@@ -3,7 +3,7 @@ import { useForm } from './useForm'
 import {Link, useNavigate} from 'react-router-dom';
 import '../login/Login.css'
 import '../../styles/bootstrap-5.3.0-alpha1-dist/css/bootstrap.css'
-const LoginScreen = () => {
+const RegisterScreen = () => {
 
    const navigate = useNavigate();
 
@@ -68,7 +68,7 @@ console.log('object');
 
         <h1 className='h1 mt-3 mb-3 fw-normal'>Foreveryone</h1>
 
-        <h3 className='h3 mb-3 fw-normal'>Sign In</h3>
+        <h3 className='h3 mb-3 fw-normal'>Register</h3>
       
        <main className='form-signin w-100 m-auto'>
 
@@ -130,13 +130,13 @@ console.log('object');
             className='w-50 btn-lg btn btn-primary'
             /*onClick={handleSignIn}*/
             >
-                Sign In
+              Register
             </button>
           <Link
-           to = 'auth/register'
+           to = '/'
 
           >
-            register
+            Sign In
           </Link>
       </form>
       
@@ -147,4 +147,5 @@ console.log('object');
   )
 }
 
-export default LoginScreen
+export default RegisterScreen
+
