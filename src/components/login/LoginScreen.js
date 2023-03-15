@@ -53,14 +53,14 @@ console.log('object');
     e.preventDefault();
   }
    
-    /*const handleSignIn = () => {
-         navigate('/home',{
+    const handleSignIn = () => {
+         navigate('/auth/register',{
             replace: true
          });
       
       
         
-    }*/
+    }
 
 
   return (
@@ -127,17 +127,18 @@ console.log('object');
         
                 <button 
             type='submit'
-            className='w-50 btn-lg btn btn-primary'
+            className='w-50 btn-lg btn btn-success'
             /*onClick={handleSignIn}*/
             >
                 Sign In
             </button>
-          <Link
-           to = 'auth/register'
-
-          >
-            register
-          </Link>
+            <button 
+            type='submit'
+            className='w-50 btn-lg btn btn-primary btn-sm'
+            onClick={handleSignIn}
+            >
+                Register
+            </button>
       </form>
       
 
